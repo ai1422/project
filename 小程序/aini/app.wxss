@@ -1,0 +1,53 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+/*灰色分割块*/
+.divider{
+  height:20rpx;
+  background:#f1f1f1;
+  box-shadow: 0 5rpx 5rpx rgba(0,0,0,0.1) inset;
+}
+/*箭头*/
+.arrow{
+  display:flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+.arrow::after{
+  content:"";
+  width:15rpx;
+  height:15rpx;
+  border-top:3rpx solid #4B4B4B;
+  border-right:3rpx solid #4B4B4B;
+  transform: rotate(45deg);
+}
+
+/* 截取超出范围名称*/
+/*商品名称过长 截取。。。*/
+.ell{
+  overflow: hidden;   /*超出部分隐藏*/
+  white-space: nowrap;   /*不允许换行*/
+  text-overflow: ellipsis;   /*超出部分补充。。。*/
+}
+
+/*<image src="/assets/icons/coupon.png" class="cell-img" mode="aspectFill" lazy-load></image>
+   <view class="cell-item arrow">
+      <text>优惠卷</text>
+   </view>
+   <image src="/assets/icons/integral.png" class="cell-img" mode="aspectFill" lazy-load></image>
+   <view class="cell-item arrow">
+      <text>积分</text>
+   </view>
+   <image src="/assets/icons/address.png" class="cell-img" mode="aspectFill" lazy-load></image>
+   <view class="cell-item arrow">
+      <text>地址管理</text>
+   </view>
+   
+   */

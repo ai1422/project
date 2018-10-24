@@ -1,0 +1,62 @@
+<!--index.wxml-->
+<!--个人中心-->
+<!--头像-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+    <view></view>
+  </view>
+</view>
+<!--灰色分割块-->
+<view class="divider"></view>
+<!--我的订单-->
+<view class="cell">
+   <navigator class="cell-item arrow">
+      <text>我的订单</text>
+   </navigator>
+
+   <!--四个图标-->
+   <view class="navs">
+     <view class="nav-item">
+        <image class="nav-image" src="/assets/icons/fukuan.png" mode="aspectFill" lazy-load></image>
+        <text>待付款</text>
+     </view>
+     <view class="nav-item">
+        <image class="nav-image" src="/assets/icons/fahuo.png" mode="aspectFill" lazy-load></image>
+        <text>待发货</text>
+      </view>
+      <view class="nav-item">
+        <image class="nav-image" src="/assets/icons/shouhuo.png" mode="aspectFill" lazy-load></image>
+        <text>待收货</text>
+      </view>
+      <view class="nav-item">
+        <image class="nav-image" src="/assets/icons/shouhou.png" mode="aspectFill" lazy-load></image>
+        <text>售后</text>
+      </view>
+   </view>
+</view>
+<!--灰色分割块-->
+<view class="divider"></view>
+
+<!--列表-->
+<view class="cell">
+   <navigator class="cell-item arrow">
+      <text>会员卡</text>
+   </navigator>
+   <navigator class="cell-item arrow">
+      <text>优惠卷</text>
+   </navigator>
+   <navigator class="cell-item arrow">
+      <text>积分</text>
+   </navigator>
+   <navigator class="cell-item arrow">
+      <text>地址管理</text>
+   </navigator>
+</view>
+
+
+
