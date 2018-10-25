@@ -1,0 +1,272 @@
+@charset "UTF-8";
+/*第二列表内容*/
+.run-wrap {
+  position: relative;
+  height: 636px;
+  background-color: #3d3744;
+  background-image: url(gotokeep/img/index/main2/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+  .run-wrap .run-track-wrap {
+    position: absolute;
+    top: 138px;
+    left: 274px; }
+    .run-wrap .run-track-wrap img {
+      width: 100%;
+      display: block;
+      position: relative;
+      z-index: 2; }
+    .run-wrap .run-track-wrap .animate-circle {
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      bottom: -12px;
+      right: -12px;
+      background: #fff;
+      border-radius: 50%;
+      animation: scale 2s ease infinite normal; }
+  .run-wrap .run-config-wrap {
+    width: 384px;
+    position: absolute;
+    top: -23px;
+    right: 110px;
+    z-index: 2; }
+    .run-wrap .run-config-wrap .run-config-pace {
+      height: 342px;
+      padding: 22px 18px 20px;
+      background-color: #5e5566;
+      border-radius: 5px;
+      text-align: left;
+      box-shadow: 0 8px 24px 0 rgba(70, 61, 77, 0.6);
+      box-sizing: border-box; }
+      .run-wrap .run-config-wrap .run-config-pace .config-title {
+        font-size: 16px;
+        color: #ddd;
+        line-height: 1; }
+        .run-wrap .run-config-wrap .run-config-pace .config-title i {
+          font-size: 22px;
+          margin-right: 10px;
+          position: relative;
+          top: 2px; }
+      .run-wrap .run-config-wrap .run-config-pace .config-cont {
+        font-size: 12px;
+        color: #827a89;
+        margin: 28px 0 16px;
+        line-height: 1;
+        overflow: hidden; }
+        .run-wrap .run-config-wrap .run-config-pace .config-cont .right {
+          float: right; }
+      .run-wrap .run-config-wrap .run-config-pace .speed-bar1 {
+        width: 54.6%; }
+        .run-wrap .run-config-wrap .run-config-pace .speed-bar1 .speed-bar-fill {
+          transition: all 2s ease;
+          -webkit-transition: all 2s ease; }
+      .run-wrap .run-config-wrap .run-config-pace .speed-bar {
+        height: 24px;
+        border-radius: 24px;
+        background-color: rgba(36, 199, 137, 0.3);
+        margin-top: 10px; }
+        .run-wrap .run-config-wrap .run-config-pace .speed-bar .speed-bar-fill {
+          height: 24px;
+          width: 0;
+          border-radius: 24px;
+          background-color: #24c789; }
+      .run-wrap .run-config-wrap .run-config-pace .speed-bar2 {
+        width: 42%; }
+        .run-wrap .run-config-wrap .run-config-pace .speed-bar2 .speed-bar-fill {
+          -webkit-transition: all 2s ease;
+          transition: all 2s ease; }
+      .run-wrap .run-config-wrap .run-config-pace .speed-bar3 {
+        width: 45.4%; }
+        .run-wrap .run-config-wrap .run-config-pace .speed-bar3 .speed-bar-fill {
+          -webkit-transition: all 1.25s ease;
+          transition: all 1.25s ease; }
+      .run-wrap .run-config-wrap .run-config-pace .speed-bar4 {
+        width: 100%; }
+        .run-wrap .run-config-wrap .run-config-pace .speed-bar4 .speed-bar-fill {
+          -webkit-transition: all 3s ease;
+          transition: all 3s ease; }
+      .run-wrap .run-config-wrap .run-config-pace .speed-bar5 {
+        width: 48.9%; }
+        .run-wrap .run-config-wrap .run-config-pace .speed-bar5 .speed-bar-fill {
+          -webkit-transition: all 1.5s ease;
+          transition: all 1.5s ease; }
+      .run-wrap .run-config-wrap .run-config-pace .speed-bar6 {
+        width: 45.4%; }
+        .run-wrap .run-config-wrap .run-config-pace .speed-bar6 .speed-bar-fill {
+          -webkit-transition: all 1.25s ease;
+          transition: all 1.25s ease; }
+      .run-wrap .run-config-wrap .run-config-pace .speed-bar7 {
+        width: 50.6%; }
+        .run-wrap .run-config-wrap .run-config-pace .speed-bar7 .speed-bar-fill {
+          -webkit-transition: all 1.75s ease;
+          transition: all 1.75s ease; }
+    .run-wrap .run-config-wrap .run-config-frequency {
+      margin-top: 10px;
+      width: 100%;
+      position: relative;
+      height: 342px;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px 0 rgba(70, 61, 77, 0.6); }
+      .run-wrap .run-config-wrap .run-config-frequency .config-title {
+        position: absolute;
+        top: 22px;
+        left: 0;
+        width: 100%;
+        padding: 0 18px;
+        z-index: 2;
+        box-sizing: border-box; }
+        .run-wrap .run-config-wrap .run-config-frequency .config-title div {
+          font-size: 16px;
+          color: #ddd;
+          overflow: hidden;
+          text-align: left;
+          line-height: 16px; }
+        .run-wrap .run-config-wrap .run-config-frequency .config-title i {
+          font-size: 22px;
+          margin-right: 3px;
+          position: relative;
+          top: 2px; }
+        .run-wrap .run-config-wrap .run-config-frequency .config-title .right {
+          font-size: 12px;
+          color: #827a89;
+          float: right; }
+        .run-wrap .run-config-wrap .run-config-frequency .config-title .chart-title {
+          text-align: center;
+          font-size: 12px;
+          color: #827a89;
+          margin-top: 20px; }
+          .run-wrap .run-config-wrap .run-config-frequency .config-title .chart-title span {
+            color: #24c789;
+            margin-left: 5px; }
+      .run-wrap .run-config-wrap .run-config-frequency .config-bg {
+        width: 100%;
+        display: block; }
+      .run-wrap .run-config-wrap .run-config-frequency #freq-img {
+        width: 100%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        transition: all 3s ease;
+        -webkit-transition: all 3s ease;
+        overflow: hidden; }
+        .run-wrap .run-config-wrap .run-config-frequency #freq-img img {
+          position: absolute;
+          width: 384px;
+          height: 100%;
+          right: 0;
+          top: 0; }
+  .run-wrap .run-text-wrap {
+    position: absolute;
+    top: 46px;
+    right: 566px;
+    width: 268px;
+    text-align: right;
+    z-index: 2; }
+    .run-wrap .run-text-wrap .run-text-title {
+      color: #fff;
+      font-size: 16px; }
+    .run-wrap .run-text-wrap .run-text-cont {
+      font-size: 14px;
+      color: #8e8893;
+      margin: 20px 0; }
+    .run-wrap .run-text-wrap .run-btn {
+      display: inline-block;
+      color: #fefefe;
+      background-color: #24c789;
+      width: 138px;
+      height: 42px;
+      line-height: 42px;
+      text-align: center;
+      border-radius: 42px;
+      font-size: 14px;
+      box-shadow: 0 4px 16px 0 rgba(32, 178, 122, 0.27); }
+      .run-wrap .run-text-wrap .run-btn span {
+        display: inline-block;
+        position: relative;
+        left: 0;
+        transition: left .5s;
+        -webkit-transition: all .5s; }
+      .run-wrap .run-text-wrap .run-btn i {
+        margin-left: 20px;
+        border-top: 2px solid #a6efd3;
+        border-right: 2px solid #a6efd3;
+        transform: rotate(45deg);
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        position: relative;
+        top: -1px; }
+  .run-wrap .run-data {
+    position: absolute;
+    bottom: 40px;
+    right: 536px;
+    font-size: 12px;
+    color: #8e8893;
+    text-align: center;
+    z-index: 2; }
+    .run-wrap .run-data .data-block {
+      display: inline-block; }
+      .run-wrap .run-data .data-block .data-title {
+        text-align: left; }
+      .run-wrap .run-data .data-block .data-val {
+        font-size: 44px;
+        color: #ddd;
+        line-height: 1;
+        margin: 16px 0;
+        font-weight: bold; }
+    .run-wrap .run-data .data-unit {
+      text-align: right; }
+    .run-wrap .run-data .data-block-right {
+      display: inline-block;
+      margin-left: 120px; }
+      .run-wrap .run-data .data-block-right .data-block2 {
+        display: inline-block;
+        margin: 0 30px; }
+      .run-wrap .run-data .data-block-right .data-title {
+        text-align: center; }
+        .run-wrap .run-data .data-block-right .data-title .icon-speed {
+          position: relative;
+          top: -5px;
+          width: 32px;
+          height: 24px;
+          background-size: 32px 24px;
+          background: url(gotokeep/img/index/main2/4.png) no-repeat center; }
+        .run-wrap .run-data .data-block-right .data-title i {
+          display: inline-block; }
+        .run-wrap .run-data .data-block-right .data-title .icon-duration {
+          width: 28px;
+          height: 30px;
+          background-size: 28px 30px;
+          background: url(gotokeep/img/index/main2/5.png) no-repeat center; }
+        .run-wrap .run-data .data-block-right .data-title .icon-cal {
+          position: relative;
+          top: -5px;
+          width: 20px;
+          height: 24px;
+          background-size: 20px 24px;
+          background: url(gotokeep/img/index/main2/6.png) no-repeat center; }
+      .run-wrap .run-data .data-block-right .data-val {
+        font-size: 27px;
+        color: #ddd;
+        line-height: 1;
+        margin: 16px 0;
+        font-weight: bold; }
+      .run-wrap .run-data .data-block-right .data-unit {
+        text-align: center; }
+
+@media screen and (max-width: 1439px) and (min-width: 1024px) {
+  .run-wrap .run-track-wrap {
+    left: 45px; }
+  .run-wrap .run-config-wrap {
+    top: -26px;
+    right: 28px; }
+  .run-wrap .run-text-wrap {
+    right: initial;
+    left: 298px; }
+  .run-wrap .run-data {
+    right: initial;
+    left: 44px; } }

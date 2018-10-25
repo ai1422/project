@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/1.css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/vue.js"></script>
+    <title>登录/注册</title>
+</head>
+<body data-keepversion>
+    <div class="keep-header">
+        <nav class="nav-wrapper-pc-wider">
+            <div class="head-left">
+                <a href="index.html">
+                    <img src="gotokeep/logo-16fc21eba7.png">
+                </a>
+            </div>
+            <div class="head-right">
+                <div class="nav-pc">
+                    <a href="faxian.html">发现精选</a>
+                    <a href="xunlian.html">课程内容</a>
+                    <a href="login.html" class="keep-login-trigger">
+                        <i class="keep-icon-user"></i>
+                        <span>登录/注册</span>
+                    </a>
+                </div>
+                <div class="social-media">
+                    <a href="javascript:;" class="wechat-link">
+                        <i class="keep-icon-wechat"></i>
+                        <div class="wechat-qr">
+                            <img src="gotokeep/wechat-qr-429ecdac26.jpg">
+                        </div>
+                    </a>
+                    <a href="https://weibo.com/p/1006065342268417/home?is_hot=1" target="_blank">
+                        <i class="keep-icon-weibo"></i>
+                    </a>
+                    <a href="https://twitter.com/KeepTrainer" target="_blank">
+                        <i class="keep-icon-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/keeptrainer/" target="_blank">
+                        <i class="keep-icon-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="content-wrapper">
+        <div class="login-wrapper">
+            <h2>
+                <span id="login1" class="dl-wrapper active">登录</span>
+                <span id="login2" class="zc-wrapper">注册</span>
+            </h2>
+            <!--登录表格-->
+            <div id="login3" class="login-panel panel active">
+                <form method="post">
+                    <div class="input-wrapper">
+                        <div class="error"></div>
+                        <input type="text" value="+86" name="countryCode" class="country-input country-num">
+                        <input type="hidden" name="countryName" value>
+                        <input type="tel" placeholder="手机号" name="nobile" class="phone-input pone-num">
+                    </div>
+                    <div class="input-wrapper">
+                        <i class="keep-icon-password"></i>
+                        <input type="password" placeholder="密码" name="password" class="phone-input-password">
+                    </div>
+                    <input type="submit" value="登录" class="submit">
+                </form>
+                <div class="social-login">
+                    <p>
+                        其他方式登录
+                        <span>:</span>
+                    </p>
+                    <div class="social-list">
+                        <a href="https://www.gotokeep.com/login?next=http%3A%2F%2Fwww.gotokeep.com%2F###" data-type="qqv2">
+                            <i class="keep-icon-qq"></i>
+                        </a>
+                        <a href="https://www.gotokeep.com/login?next=http%3A%2F%2Fwww.gotokeep.com%2F###" data-type="weibov2">
+                            <i class="keep-icon-weibo"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--注册表格-->
+            <div id="login4" class="register-panel panel">
+                <form method="post">
+                    <div class="input-wrapper">
+                        <div class="error error-mobile"></div>
+                        <input type="text" value="+86" name="countryCode" class="country-input country-num">
+                        <input type="hidden" name="countryName" value>
+                        <input type="tel" placeholder="手机号" name="mobile" class="phone-input phone-num">
+                        <input id="captcha" type="hidden" name="captcha" value>
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="error error-password"></div>
+                        <i class="keep-icon-password"></i>
+                        <input type="password" placeholder="密码" name="password" class="phone-input-password">
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="error error-username"></div>
+                        <i class="keep-icon-user"></i>
+                        <input type="text" placeholder="昵称" name="username" class="phone-input-username">
+                    </div>
+                    <div class="gender-select">
+                        <div class="gender-text">性别</div>
+                        <div data-value="M" class="gender-radio">
+                            <div class="radio"></div>
+                            <span>男</span>
+                        </div>
+                        <div data-value="F" class="gender-radio active no-margin">
+                            <div class="radio"></div>
+                            <span>女</span>
+                        </div>
+                        <input id="register-gender" type="hidden" name="gneder" value="F">
+                    </div>
+                    <input type="submit" value="注册" class="submit">
+                </form>
+                <div class="register-info">
+                    注册即表示同意「Keep」
+                    <a href="https://www.gotokeep.com/tos" target="_blank">用户协议</a>
+                    和
+                    <a href="htttPs://www.gotokeep.com/privacy" target="_blank">隐私政策</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+    <footer class="keep-footer">
+        <div class="footer-wrapper">
+            <div class="info-wrapper clearfix">
+                <div class="info-left">
+                    <div class="info-block">
+                        <a href="">关于我们</a>
+                        <a href="">加入我们</a>
+                        <a href="">联系方式</a>
+                    </div>
+                    <div class="info-block">
+                        <a href="">训练课程</a>
+                        <a href="">运动轨迹</a>
+                        <a href="">社区精选</a>
+                    </div>
+                    <div class="info-block">
+                        <a href="">用户协议</a>
+                        <a href="">隐私政策</a>
+                        <a href="">社区规范</a>
+                    </div>
+                </div>
+                <div class="info-right">
+                    <div class="info-social">
+                        <div class="link-wrapper">
+                            <a href="#" class="wechat-link">
+                                <i class="keep-icon-wechat"></i>
+                            </a>
+                        </div>
+                        <div class="link-wrapper">
+                            <a href="#" target="_blank">
+                                <i class="keep-icon-weibo"></i>
+                            </a>
+                        </div>
+                        <div class="link-wrapper">
+                            <a href="#" target="_blank">
+                                <i class="keep-icon-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="link-wrapper">
+                            <a href="#" target="_blank">
+                                <i class="keep-icon-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info-text">
+                        哪有什么天生如此，只是我们天天坚持
+                        <br>
+                        自律给我自由
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                2014-2018 © Keep All Rights Reserved. 北京卡路里科技有限公司
+                <a href="http://www.miitbian.gov.cn" target="_blank">京ICP备14051192号 京ICP证160770号</a>
+                <div style="display:inline-block;margin-left:5px;">
+                    <a target="_blank" href="" style="display:inline-blank;text-decoration:none;">
+                        <img src="gotokeep/img/footer/1.png" style="position:relative;top:4px;">
+                        <span style="margin:0px 0px 0px 5px;color:#939393;">京公网安备 11010102002956号</span>
+                    </a>
+                </div>
+                <div style="margin-top:10px;">如果您在 Keep 发现违法违规内容， 请您向我们举报！ 举报电话：010-86223197  举报邮箱：report@gotokeep.com</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
