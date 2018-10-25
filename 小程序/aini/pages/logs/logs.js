@@ -42,6 +42,9 @@ Page({
       }
     })
   },
+  //onLoad:function(options){
+    //this.loadMore();
+  //},
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -75,14 +78,15 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-  
+    wx.stopPullDownRefresh()
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-  
+    //监听上拉触底操作
+    //this.loadMore();
   },
 
   /**
@@ -90,6 +94,14 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  showDetail:function(e){
+    //自定义方法
+    var pid = e.target.dataset.pid;
+    wx.navigateTo({
+      url: "../detail/detail?pic"+pid
+    });
+
   }
 })
 
