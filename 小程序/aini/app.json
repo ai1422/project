@@ -1,7 +1,9 @@
 {
   "pages": [
-    "pages/reserve/reserve",
     "pages/logs/logs",
+    "pages/order/order",
+    "pages/detail/detail",
+    "pages/reserve/reserve",
     "pages/index/index"
   ],
   "window": {
