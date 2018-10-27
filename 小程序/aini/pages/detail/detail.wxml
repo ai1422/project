@@ -3,17 +3,17 @@
 <view class="slider"> 
   <swiper autoplay interval="3000" duration="400" indicator-dots="{{true}}">
     <swiper-item>
-       <image src="/assets/images/1.png" mode="aspectFill" lazy-load></image>
+       <image src="{{shop[0].img_url}}" mode="aspectFill" lazy-load></image>
     </swiper-item>
   </swiper>
 </view>
 <!--商品信息-->
 <view class="cell ii">
-      <text class="shop-title">4选1</text>
+      <text class="shop-title">{{shop[0].title}}</text>
   <navigator>
     <view class="priceInfo">
-      <text class="newprice">￥98.00</text>
-      <text class="oldprice">原价：528.00</text>
+      <text class="newprice">￥{{shop[0].newpric}}</text>
+      <text class="oldprice">原价:{{shop[0].oldpric}}</text>
     </view>
    </navigator>
    <navigator class="li">
@@ -45,7 +45,7 @@
     <text>订单</text>
   </view>
  </view>
-  <navigator class="nav">
-    <text>立即预约</text>
-  </navigator>
+  <view class="nav" bindtap="showOrder" data-pid="{{shop[0].pid}}">
+    <text >立即预约</text>
+  </view>
 </view>
