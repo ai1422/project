@@ -1,0 +1,29 @@
+<!--logs.wxml-->
+<!--首页-->
+<!--图片轮播-->
+<view class="slider">
+  <swiper autoplay interval="3500" indicator-dots="false">
+    <swiper-item  wx:for="{{imagelist}}" wx:key="{{sid}}">
+      <image src="{{item.img_url}}" mode="aspectFill" lazy-load width="375" height="150"/>
+    </swiper-item>
+  </swiper>
+</view>
+
+<!--四个图标-->
+<view class="navs">
+     <view class="nav-item" wx:for="{{tuplist}}" wx:key="{{uid}}">
+        <image class="nav-image" src="{{item.img_url}}" mode="aspectFill" lazy-load></image>
+        <text>{{item.title}}</text>
+     </view>
+   </view>
+
+<!--商品列表-->
+<view class="call">
+  <view class="call-item" wx:for="{{tuplist2}}" wx:key="{{pid}}">
+    <image class="call-image"  bindtap="showDetail" data-pid="{{item.pid}}" src="{{item.img_url}}" mode="aspectFill" lazy-load ></image>
+    <text class="call-title ell">{{item.title}}</text>
+    <text class="call-shu">￥{{item.pric}}</text>
+  </view>
+</view>
+
+

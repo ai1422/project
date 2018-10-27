@@ -1,0 +1,51 @@
+<!--pages/detail/detail.wxml-->
+<!--轮播区域-->
+<view class="slider"> 
+  <swiper autoplay interval="3000" duration="400" indicator-dots="{{true}}">
+    <swiper-item>
+       <image src="{{shop[0].img_url}}" mode="aspectFill" lazy-load></image>
+    </swiper-item>
+  </swiper>
+</view>
+<!--商品信息-->
+<view class="cell ii">
+      <text class="shop-title">{{shop[0].title}}</text>
+  <navigator>
+    <view class="priceInfo">
+      <text class="newprice">￥{{shop[0].newpric}}</text>
+      <text class="oldprice">原价:{{shop[0].oldpric}}</text>
+    </view>
+   </navigator>
+   <navigator class="li">
+     <text class="li-left">库存：98件</text>
+     <text class="li-right">销量：0笔</text>
+   </navigator>
+</view>
+<!--店铺列表-->
+<view class="cell lie">
+   <navigator class="cell-item lie-item">
+      <text>我的店铺</text>
+   </navigator>
+   <navigator class="cell-item lie-item">
+      <text>宝贝评价</text>
+   </navigator>
+   <view class="line">
+      <text></text>
+   </view>
+</view>
+<!--加入订单-->
+<view class="vs">
+ <view class="navs">
+  <view class="nav-item">
+    <image class="nav-image" src="/assets/icons/home.png" mode="aspectFill" lazy-load></image>
+    <text>首页</text>
+  </view>
+  <view class="nav-item">
+    <image class="nav-image" src="/assets/icons/profile.png" mode="aspectFill" lazy-load></image>
+    <text>订单</text>
+  </view>
+ </view>
+  <view class="nav" bindtap="showOrder" data-pid="{{shop[0].pid}}">
+    <text >立即预约</text>
+  </view>
+</view>
