@@ -50,6 +50,9 @@
    <navigator class="cell-item arrow">
       <text>优惠卷</text>
    </navigator>
+   <navigator class="cell-item arrow" bindtap="showCart">
+      <text>购物车</text>
+   </navigator>
    <navigator class="cell-item arrow">
       <text>积分</text>
    </navigator>

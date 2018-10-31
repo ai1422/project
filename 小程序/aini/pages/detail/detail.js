@@ -77,7 +77,7 @@ Page({
     //自定义方法
     var pid = e.target.dataset.pid;
     wx.navigateTo({
-      url: "../order/order?pid="+pid
+      url: "/pages/order/order?pid="+pid
     });
   }
 })

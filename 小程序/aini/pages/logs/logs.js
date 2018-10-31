@@ -99,7 +99,7 @@ Page({
     //自定义方法
     var pid = e.target.dataset.pid;
     wx.navigateTo({
-      url: "../detail/detail?pid="+pid
+      url: "/pages/detail/detail?pid="+pid
     });
   }
 })

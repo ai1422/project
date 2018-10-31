@@ -46,6 +46,8 @@
   </view>
  </view>
   <view class="nav" bindtap="showOrder" data-pid="{{shop[0].pid}}">
-    <text >立即预约</text>
+    <view>
+      <text>立即预约</text>
+    </view>
   </view>
 </view>

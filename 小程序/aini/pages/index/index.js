@@ -9,6 +9,11 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
+  showCart:()=>{
+    wx.navigateTo({
+      url:"/pages/cart/cart"
+    });
+  },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({

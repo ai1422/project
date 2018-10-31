@@ -4,7 +4,9 @@
     "pages/order/order",
     "pages/detail/detail",
     "pages/reserve/reserve",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/cart/cart"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
